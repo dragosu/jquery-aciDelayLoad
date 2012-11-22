@@ -1,0 +1,42 @@
+
+aciDelayLoad - Delayed image loading with jQuery
+
+Simple usage:
+
+$().ready(function(){
+
+    $(document).aciDelayLoad();
+
+});
+
+Note: You must not use this plugin on the 'window' object, instead use it on
+the 'document', it will bind 'onresize' event to also load images when the
+browser window is resized.
+
+If you change the content with JavaScript (Ajax) then you simply need
+to trigger the 'update' event, like this:
+
+$(document).trigger('update');
+
+Have one or more image galleries that supports scrolling in the same page?
+Just add the delayed load on the container who is scrolling, like:
+
+$().ready(function(){
+
+    $('#gallery1,#gallery2').aciDelayLoad();
+
+});
+
+and trigger the 'update' event (when/if required), like:
+
+$('#gallery1,#gallery2').trigger('update');
+
+aciDelayLoad jQuery Plugin v1.0
+http://acoderinsights.ro
+
+Copyright (c) 2012 Dragos Ursu
+Dual licensed under the MIT or GPL Version 2 licenses.
+
+Require jQuery Library http://jquery.com
+
+Date: Wed Nov 21 16:20 2012 +0200
