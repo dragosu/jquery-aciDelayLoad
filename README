@@ -1,6 +1,14 @@
 
 aciDelayLoad - Delayed image loading with jQuery
 
+With this plugin you can enable delayed load of images in your pages. What it
+does is check to see if the images are in the visible area and then load them
+(by pointing the 'src' attribute to the real image URL). The check is done when
+you scroll the content or resize the browser window. It's also possible to
+trigger an 'update' event to load the images in view (if added/replaced
+dynamically for example) so it should work just fine with any image gallery
+or slider.
+
 Simple usage:
 
 $().ready(function(){
@@ -31,7 +39,7 @@ and trigger the 'update' event (when/if required), like:
 
 $('#gallery1,#gallery2').trigger('update');
 
-aciDelayLoad jQuery Plugin v1.0
+aciDelayLoad jQuery Plugin v1.1
 http://acoderinsights.ro
 
 Copyright (c) 2012 Dragos Ursu
@@ -39,4 +47,4 @@ Dual licensed under the MIT or GPL Version 2 licenses.
 
 Require jQuery Library http://jquery.com
 
-Date: Wed Nov 21 16:20 2012 +0200
+Date: Fri Nov 23 10:20 2012 +0200
